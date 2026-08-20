@@ -1,9 +1,9 @@
 //complete this code
 class Person {
-	constructor(name , age );
+	constructor(name , age ){
 	this.name = name ;
 	this.age  = age ;
-
+}
 get name(){return this.name};
 
 set age(age){return this.age = age};	
