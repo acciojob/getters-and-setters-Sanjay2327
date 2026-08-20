@@ -6,23 +6,24 @@ class Person {
 
 get name(){return this.name};
 
-set age(age){this.age = age};	
+set age(age){return this.age = age};	
 
 
-}
+};
 
 class Student extends Person { 
 
 	study(){
 		console.log(this.name + " is studying");
 	}
-}	
+};
+
 class Teacher extends Person {
 
 	teach(){
 			console.log(this.name + " is teaching");
 	}
-}
+};
 
 const person = new Person("John", 25);
 console.log(person.name);
