@@ -1,38 +1,46 @@
 //complete this code
 class Person {
-	constructor(name: string, age: number)
+	constructor(name , age )
 	this.name = name ;
 	this.age  = age ;
+
+get name(){return this.name};
+
+set age(age){return this.age = age.age};	
+	
 }
 
-get changeName(){return this.name}
 
-set changeAge(){return this.age}
 
-class Student extends Person {
-	constructor(name: string, age: number)
+class Student extends Person { 
 
 	study(){
 		return(
-			Student.name + "is studying"
+			student.name + "is studying"
 		)
 	}
 }
 
 class Teacher extends Person {
-	constructor(name: string, age : number)
 
 	teach(){
 		return{
-			Teacher.name + "is teaching"
+			teacher.name + "is teaching"
 		}
 	}
 }
+const person = new Person("John", 25);
+console.log(person.name);
 
-const Student1 = new Student("Sanjay", 28)
-const Teacher1 = new Teacher("Priyanshi", 26)
-console.log(Student1);
-console.log(Teacher1);
+person.age = 30 ;
+console.log(person.age);
+
+const student = new Student("Alice", 22);
+student.study();
+
+const teacher = new Teacher("Bob", 40);
+teacher.teach();
+
 
 // Do not change the code below this line
 window.Person = Person;
