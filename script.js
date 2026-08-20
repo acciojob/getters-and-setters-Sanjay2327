@@ -36,10 +36,10 @@ person.age = 30 ;
 console.log(person.age);
 
 const student = new Student("Alice", 22);
-console.log(student.study);
+console.log(student.study(student));
 
 const teacher = new Teacher("Bob", 40);
-console.log(teacher.teach);
+console.log(teacher.teach(teacher));
 
 
 // Do not change the code below this line
