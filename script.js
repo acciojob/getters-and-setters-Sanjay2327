@@ -6,7 +6,7 @@ class Person {
 
 get name(){return this.name};
 
-set age(age){return this.age = age};	
+set age(age){this.age = age};	
 
 
 }
@@ -14,13 +14,13 @@ set age(age){return this.age = age};
 class Student extends Person { 
 
 	study(){
-		console.log(this.name + " is studying")
+		console.log(this.name + " is studying");
 	}
 }	
 class Teacher extends Person {
 
 	teach(){
-			console.log(this.name + " is teaching";)
+			console.log(this.name + " is teaching");
 	}
 }
 
@@ -31,10 +31,10 @@ person.age = 30 ;
 console.log(person.age);
 
 const student = new Student("Alice", 22);
-console.log(student.study());
+student.study() ;
 
 const teacher = new Teacher("Bob", 40);
-console.log(teacher.teach());
+teacher.teach() ;
 
 
 // Do not change the code below this line
