@@ -6,7 +6,7 @@ class Person {
 
 get name(){return this.name};
 
-set age(age){return this.age = age.age};	
+set age(age){return this.age = age};	
 	
 }
 
@@ -16,7 +16,7 @@ class Student extends Person {
 
 	study(){
 		return(
-			student.name + "is studying"
+			this.name + "is studying"
 		)
 	}
 }
@@ -25,7 +25,7 @@ class Teacher extends Person {
 
 	teach(){
 		return{
-			teacher.name + "is teaching"
+			this.name + "is teaching"
 		}
 	}
 }
